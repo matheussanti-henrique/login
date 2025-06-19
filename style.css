@@ -1,0 +1,17 @@
+
+ body{
+color: red;
+font-family: Arial;
+background:gray;
+}
+
+.titulo-principal{
+    color:red;
+    display: center;
+    font-family: Arial;
+}
+.titulo-secundario{
+    color:black
+    background:white;
+
+}
