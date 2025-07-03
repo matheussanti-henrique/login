@@ -1,18 +1,114 @@
-<html>
-
-
-
-
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tela de Login</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(120deg, #6e00ff, #b700ff);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-container {
+      background-color: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #6e00ff;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #444;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      border-color: #6e00ff;
+    }
+
+    .btn-login {
+      width: 100%;
+      padding: 12px;
+      background-color: #6e00ff;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .btn-login:hover {
+      background-color: #4d00c4;
+    }
+
+    .register-link {
+      text-align: center;
+      margin-top: 15px;
+      color: #444;
+    }
+
+    .register-link a {
+      color: #6e00ff;
+      text-decoration: none;
+    }
+
+    .register-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
-
 <body>
-
-<h2 class="titulo-principal">login</h2>
-
-<h2 class="titulo-secundario">nome</h2>
-
-<h2 class="titulo-terciario">senha</h2>
-
-<h2 class="titulo-quartario">buscar</h2>
+  <div class="login-container">
+    <h2>Entrar na Conta</h2>
+    <form>
+      <div class="form-group">
+        <label for="username">Usuário</label>
+        <input type="text" id="username" placeholder="Digite seu usuário" required />
+      </div>
+      <div class="form-group">
+        <label for="password">Senha</label>
+        <input type="password" id="password" placeholder="Digite sua senha" required />
+      </div>
+      <button type="submit" class="btn-login">Login</button>
+    </form>
+    <div class="register-link">
+      Não tem conta? <a href="#">Cadastre-se</a>
+    </div>
+  </div>
+</body>
+</html>
